@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Switcher</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="switcher-div">
+
+   <div class="color-button" data-color="#DC143C"
+    style="background:#DC143C"></div>  
+   
+   <div class="color-button" data-color="#e600e6"
+    style="background:#e600e6"></div>       
+   
+   <div class="color-button" data-color="#000"
+    style="background:#000"></div>       
+   
+   <div class="color-button" data-color="#ff1a75" 
+   style="background:#ff1a75"></div>       
+   
+   <div class="color-button" data-color="#008B8B" 
+   style="background:#008B8B"></div>       
+   
+    </div>      
+    </div>
+     <script>
+  let colorbutton = document.querySelectorAll('.color-button');
+
+colorbutton.forEach(color =>{
+
+  color.addEventListener('click',()=>{
+
+let datacolor = color.getAttribute('data-color');
+
+document.querySelector(':root').style.setProperty('--main-color',datacolor);
+  });   
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+:root{
+  --main-color:#008B8B;      
+  }
+  *{  
+  margin:0;   
+  padding:0;
+  box-sizing:border-box;
+  transition:all 0.1s linear;
+  }  
+  .container{
+  height:100%;  
+  width:100%;
+  background:var(--main-color);
+  position:absolute;
+  }
+  .switcher-div{
+  height:80px;  
+  width:270px;
+  background:#fff;
+  border-radius:10px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  }
+  
+  .color-button{
+  height:42px;   
+  width:41px;
+  border-radius:100%;
+  float:right;
+  margin-left:10px;
+  position:relative;
+  top:50%;
+  left:5px;
+  transform:translate(-50%,-50%);
+  }
